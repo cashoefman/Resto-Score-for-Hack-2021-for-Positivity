@@ -44,7 +44,7 @@ This tutorial is geared toward Mac users but can be easily adopted to work on Wi
 	Note: I have tried both the idf3 and idf4 versions, I prefer the idf4 version as it seems to have less issues.
 
 ```
-	esptool.py --port $SERIALPORT flash_id
+    esptool.py --port $SERIALPORT flash_id
     esptool.py --chip esp32 --port $SERIALPORT erase_flash
     esptool.py --chip esp32 --port $SERIALPORT --baud 460800 write_flash -z 0x1000 ~/Downloads/esp32-idf4-20200902-v1.13.bin
 ```
@@ -71,9 +71,9 @@ This tutorial is geared toward Mac users but can be easily adopted to work on Wi
 8. Create your Google IoT Core setup and registry, and setup your devices [as described in the Cloud IoT Core documentation](https://cloud.google.com/iot/docs/how-tos/devices), using the keys from the previous step. Or use the command line as shown before if you have the Google Cloud CLI installed. You are going to need the region and registry information to run the command line.
 
 ```
-	export REGION = "<replacewithyourregion>"
-	export REGISTRY = "<replacewithyourregistry>"
-	gcloud iot devices create $DEVUUID --region=$REGION --registry=$REGISTRY --public-key="path=./rsa_public.pem,type=rsa-pem"
+    export REGION = "<replacewithyourregion>"
+    export REGISTRY = "<replacewithyourregistry>"
+    gcloud iot devices create $DEVUUID --region=$REGION --registry=$REGISTRY --public-key="path=./rsa_public.pem,type=rsa-pem"
 ```
 
 9. Decode the RSA key for your device configuration and add the output to your new config file based on `config.py.example`. You will have open the newly created config.py and as need update the Wifi network details.
@@ -81,19 +81,19 @@ This tutorial is geared toward Mac users but can be easily adopted to work on Wi
 ```
     cp ../config.py.example config.py
     python ../utils/decode_rsa.py >> config.py
-	echo '}' >> config.py
+    echo '}' >> config.py
 ```
 
 10. Copy the Python sources to the device. Note: that although I am listing ssd1306.py here, I am not really using that in this example. But if you like you could display something on the build in display on the device using that "device driver".
 
 ```
     ampy --port $SERIALPORT --baud 115200 put ../third_party
-	ampy --port $SERIALPORT --baud 115200 put ../ssd1306.py
-	ampy --port $SERIALPORT --baud 115200 put config.py
+    ampy --port $SERIALPORT --baud 115200 put ../ssd1306.py
+    ampy --port $SERIALPORT --baud 115200 put config.py
     ampy --port $SERIALPORT --baud 115200 put ../main.py
-	ampy --port $SERIALPORT --baud 115200 put ../HC_SR04_.py
-	ampy --port $SERIALPORT --baud 115200 put ../MQ135.py
-	ampy --port $SERIALPORT --baud 115200 put ../bme680.py
+    ampy --port $SERIALPORT --baud 115200 put ../HC_SR04_.py
+    ampy --port $SERIALPORT --baud 115200 put ../MQ135.py
+    ampy --port $SERIALPORT --baud 115200 put ../bme680.py
 ```
 
 11. Connect to the device over the serial port and press reset on the device.
