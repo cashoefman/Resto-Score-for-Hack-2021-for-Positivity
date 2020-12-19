@@ -1,4 +1,4 @@
-Hack 2021 for Property
+# Resto-Score-for-Hack-2021-for-Property
 MicroPython on Heltec Wifi Kit 32 Connecting with Google IoT Core
 =================================================================
 
@@ -14,10 +14,9 @@ This tutorial is geared toward Mac users but can be easily adopted to work on Wi
 
 1. First you have to put together the hardware for this project. As mentioned earlier we used the Heltec ESP32 based microcontrollers. The sensors we used were the HC_SR04 to measure distance, an MQ135 to measure Air Quality, and a BME680 to measure temperature, humidity, air pressure and a secondary air quality reading.
 
-	You can see in the image how 
-
 ```
-    git clone https://github.com/GoogleCloudPlatform/iot-core-micropython
+    git clone https://github.com/cashoefman/Resto-Score-for-Hack-2021-for-Property
+```
 
 2. Clone or download this repository
 
