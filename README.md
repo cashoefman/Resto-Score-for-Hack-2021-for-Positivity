@@ -2,13 +2,11 @@
 MicroPython on Heltec Wifi Kit 32 Connecting with Google IoT Core
 =================================================================
 
-In December 2020 I participated together with [Clint Guin](https://www.linkedin.com/in/clint-guin/) and [Dwain Robinson](https://www.linkedin.com/in/dwain-robinson/) in the [Google Hack 2021 for Positivity Hackathon](http://hack2021forpositivity-platform.bemyapp.com). 
-
-For this Hackathon we built a Sensor Array into a set of Easy Buttons to report on space occupancy and environmental statistics. There was more to the full project but in this article I am describing just how we used Heltec LoRaWAN 32 and Heltec Wifi Kit 32 dev boards as the basis for the ESP32 Microcontroller based Sensor Array.
+In December 2020 I participated together with [Clint Guin](https://www.linkedin.com/in/clint-guin/) and [Dwain Robinson](https://www.linkedin.com/in/dwain-robinson/) in the [Google Hack 2021 for Positivity Hackathon](http://hack2021forpositivity-platform.bemyapp.com). For this Hackathon we built a Sensor Array into a set of Easy Buttons to report on space occupancy and environmental statistics. There was more to the full project but in this article I am describing just how we used Heltec LoRaWAN 32 and Heltec Wifi Kit 32 dev boards as the basis for the ESP32 Microcontroller based Sensor Array.
 
 This is a simplified example to demonstrates how to build something like this and use MicroPython to connect to Cloud IoT Core 
 
-This tutorial is geared toward Mac users but can be easily adopted to work on Windows or other Linux based systems,
+Note: This tutorial is geared toward Mac users but can be easily adopted to work on Windows or other Linux based systems,
 
 ## Quickstart for Heltec Wifi Kit 32 or Heltec LoRa 32
 
