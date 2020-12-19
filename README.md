@@ -14,15 +14,11 @@ This tutorial is geared toward Mac users but can be easily adopted to work on Wi
 
 1. First you have to put together the hardware for this project. As mentioned earlier we used the Heltec ESP32 based microcontrollers. The sensors we used were the HC_SR04 to measure distance, an MQ135 to measure Air Quality, and a BME680 to measure temperature, humidity, air pressure and a secondary air quality reading.
 
-```
-    git clone https://github.com/cashoefman/Resto-Score-for-Hack-2021-for-Property
-```
-
 2. Clone or download this repository
 
 ```
-    git clone https://github.com/GoogleCloudPlatform/iot-core-micropython
-    cd iot-core-micropython
+    https://github.com/cashoefman/Resto-Score-for-Hack-2021-for-Positivity
+    cd Resto-Score-for-Hack-2021-for-Positivity
 ```
 
 3. Create a virtual environment and install the tools for ESP32. (The creation of a virtual env is optional, your choice, you do what to install the tools though).
