@@ -1,4 +1,4 @@
-# Resto-Score-for-Hack-2021-for-Property
+# Resto Score for Hack 2021 for Positivity
 MicroPython on Heltec Wifi Kit 32 Connecting with Google IoT Core
 =================================================================
 
