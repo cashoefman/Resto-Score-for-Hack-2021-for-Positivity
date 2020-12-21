@@ -19,11 +19,11 @@ device_config = {
 
 wifi_config = {
     'ssid':'<yourSSID>',
-    'password':'<yourwifpasswordr'
+    'password':'<yourWiFipassword>'
 }
 
 google_cloud_config = {
-    'project_id':'<your google projectID>',
+    'project_id':'<google projectID>',
     'cloud_region':'<google cloud region>',
     'registry_id':'<google registry ID>',
     'mqtt_bridge_hostname':'mqtt.googleapis.com',
