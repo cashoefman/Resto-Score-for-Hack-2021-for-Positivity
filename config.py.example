@@ -18,15 +18,14 @@ device_config = {
 }
 
 wifi_config = {
-    'ssid':'ATLAS Workbase Guest',
-    'password':'shanghai'
+    'ssid':'<yourSSID>',
+    'password':'<yourwifpasswordr'
 }
 
 google_cloud_config = {
-    'project_id':'mkr-gcp-297917',
-    'cloud_region':'us-central1',
-    'registry_id':'hck2021',
-    'device_id':'DEV10521c5c',
+    'project_id':'<your google projectID>',
+    'cloud_region':'<google cloud region>',
+    'registry_id':'<google registry ID>',
     'mqtt_bridge_hostname':'mqtt.googleapis.com',
     'mqtt_bridge_port':8883
 }
